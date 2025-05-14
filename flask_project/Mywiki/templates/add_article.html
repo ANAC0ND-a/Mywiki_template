@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>記事の追加を行うページ</h2>
+    <form action="/add_article" method="POST">
+        <label for="title">記事のタイトル</label>
+        <input name="title">
+
+        <label for="content">本文</label>
+        <input name="content">
+
+        <label for="tags">タグ</label>
+        <input name="tags">
+        <button type="submit" class="btn btn-primary">記事を追加</button>
+    </form>
+</div>
+{% endblock %}
